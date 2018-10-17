@@ -132,8 +132,8 @@ void cpu_clock_init(void) {
 MKR1300::MKR1300() :
     messageBus(),
     timer(),
-    serial(io.a7, io.a6),
     io(),
+    serial(io.a7, io.a6),
     buttonA(io.buttonA, DEVICE_ID_BUTTON_A, DEVICE_BUTTON_ALL_EVENTS, ACTIVE_HIGH, PullMode::Down),
     buttonB(io.buttonB, DEVICE_ID_BUTTON_B, DEVICE_BUTTON_ALL_EVENTS, ACTIVE_HIGH, PullMode::Down),
     buttonC(io.buttonC, DEVICE_ID_BUTTON_C, DEVICE_BUTTON_ALL_EVENTS, ACTIVE_LOW, PullMode::Up),
