@@ -54,6 +54,14 @@ static void dfll_sync(void)
 #define NVM_SW_CALIB_DFLL48M_COARSE_VAL 58
 #define NVM_SW_CALIB_DFLL48M_FINE_VAL 64
 
+int target_seed_random(uint32_t rand)
+{
+    return codal::seed_random(rand);
+}
+ int target_random(int max)
+{
+    return codal::random(max);
+}
 
 //
 // TODO: Refactor this into a CPU control or power class...
