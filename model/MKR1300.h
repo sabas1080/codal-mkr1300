@@ -85,8 +85,8 @@ namespace codal
 
         MessageBus                  messageBus;
         CPlayTimer                  timer;
+        MKR1300IO                   io;
         _mbed::Serial               serial;
-        MKR1300IO         io;
         Button                      buttonA;
         Button                      buttonB;
         Button                      buttonC;
