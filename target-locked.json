@@ -38,7 +38,7 @@
     }, 
     "cpp_flags": "-std=c++11 -fwrapv -fno-rtti -fno-threadsafe-statics -fno-exceptions -fno-unwind-tables -Wl,--gc-sections -Wl,--sort-common -Wl,--sort-section=alignment", 
     "cpu_opts": "-mcpu=cortex-m0plus -mthumb", 
-    "definitions": "-DCONF_CLOCKS_H_INCLUDED -DGCLK_PERIPHERAL_CLOCK=GCLK_GENERATOR_3 -DDEVICE_ANALOGIN -DDEVICE_ANALOGOUT -DDEVICE_I2C -DDEVICE_I2CSLAVE -DDEVICE_I2C_ASYNCH -DDEVICE_INTERRUPTIN -DDEVICE_PORTIN -DDEVICE_PORTINOUT -DDEVICE_PORTOUT -DDEVICE_RTC -DDEVICE_SERIAL -DDEVICE_SERIAL_ASYNCH -DDEVICE_SERIAL_FC -DDEVICE_SLEEP -DDEVICE_SPI -DDEVICE_PWMOUT -DDEVICE_SPISLAVE -DDEVICE_SPI_ASYNCH -DCONF_CLOCKS_H_INCLUDED -DGCLK_PERIPHERAL_CLOCK=GCLK_GENERATOR_3 -D__SAMD21G18A__ -D__CORTEX_M0PLUS -D__MBED__=1  -DTOOLCHAIN_GCC -DTOOLCHAIN_GCC_ARM -DMBED_OPERATORS -DTARGET_ADAFRUIT_CP_G18A -DI2C_MASTER_CALLBACK_MODE=true -DEXTINT_CALLBACK_MODE=true -DUSART_CALLBACK_MODE=true -DTC_ASYNC=true", 
+    "definitions": "-DCONF_CLOCKS_H_INCLUDED -DGCLK_PERIPHERAL_CLOCK=GCLK_GENERATOR_3 -DDEVICE_ANALOGIN -DDEVICE_ANALOGOUT -DDEVICE_I2C -DDEVICE_I2CSLAVE -DDEVICE_I2C_ASYNCH -DDEVICE_INTERRUPTIN -DDEVICE_PORTIN -DDEVICE_PORTINOUT -DDEVICE_PORTOUT -DDEVICE_RTC -DDEVICE_SERIAL -DDEVICE_SERIAL_ASYNCH -DDEVICE_SERIAL_FC -DDEVICE_SLEEP -DDEVICE_SPI -DDEVICE_PWMOUT -DDEVICE_SPISLAVE -DDEVICE_SPI_ASYNCH -DCONF_CLOCKS_H_INCLUDED -DGCLK_PERIPHERAL_CLOCK=GCLK_GENERATOR_3 -D__SAMD21G18A__ -D__CORTEX_M0PLUS -D__MBED__=1  -DTOOLCHAIN_GCC -DTOOLCHAIN_GCC_ARM -DMBED_OPERATORS -DTARGET_ARDUINO_MKR1300_G18A -DI2C_MASTER_CALLBACK_MODE=true -DEXTINT_CALLBACK_MODE=true -DUSART_CALLBACK_MODE=true -DTC_ASYNC=true", 
     "device": "MKR1300", 
     "generate_bin": true, 
     "generate_hex": true, 
@@ -50,10 +50,10 @@
             "url": "https://github.com/lancaster-university/codal-core"
         }, 
         {
-            "branch": "7264420adbec119a1a6090287badc80651ba3fc1", 
+            "branch": "33339cb67fd55326e6dc1d3056bfe6644a7c0c5d", 
             "name": "mbed-classic", 
             "type": "git", 
-            "url": "https://github.com/lancaster-university/mbed-classic"
+            "url": "https://github.com/ElectronicCats/mbed-classic"
         }, 
         {
             "branch": "a2f467d212411c02cc4e7eddb7b94fecd2ff45c8", 
@@ -71,6 +71,6 @@
     "linker_flags": "-Wl,--no-wchar-size-warning,-wrap,main", 
     "post_process": "python ./utils/uf2conv.py -o <OUTPUT_HEX_DESTINATION>/<OUTPUT_HEX_NAME>.uf2 -c <OUTPUT_BIN_LOCATION>", 
     "processor": "SAMD21G18A", 
-    "snapshot_version": "v0.0.7", 
+    "snapshot_version": "v0.1.1", 
     "toolchain": "ARM_GCC"
 }
