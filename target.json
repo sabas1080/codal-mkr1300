@@ -55,7 +55,7 @@
         },
         {
             "name":"mbed-classic",
-            "url":"https://github.com/lancaster-university/mbed-classic",
+            "url":"https://github.com/ElectronicCats/mbed-classic",
             "branch":"new-build-system",
             "type":"git"
         },
